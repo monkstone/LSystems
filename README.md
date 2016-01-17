@@ -7,7 +7,7 @@ Mostly just works requires building:
 mvn package
 ```
 
-The lsystems.jar gets built into target folder copy to `libraries/lsystems/library`
+The lsystems.jar gets built into target folder copy to your processing-3.0 `libraries/lsystems/library`
 
 I just can't get on with prisoner johns template...............
 
