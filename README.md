@@ -1,4 +1,4 @@
-# LSystems
+# LSystems ![Build Status](https://travis-ci.org/monkstone/LSystems.svg)
 LSystems Library for Processing-3.0
 
 Mostly just works requires building:
