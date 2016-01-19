@@ -10,12 +10,12 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see @see <a href="http://www.gnu.org/licenses">http://www.gnu.org/licenses</a>.
  */
 package lsystem.util;
 
 /**
- * @author Martin Prout 
+* 
  * from a borrowed pattern seen in Jonathan Feibergs Peasycam
  * when I was struggling with non functioning browser applet, 
  * probably superfluous here. Change to int count after processing-2.0b8
@@ -23,8 +23,8 @@ package lsystem.util;
 public interface WheelHandler { 
     /**
      * 
-     * @param amount 
+     * @param amount int
      */
 
-    public void handleWheel(float amount);
+    public void handleWheel(int amount);
 }

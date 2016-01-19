@@ -10,7 +10,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see <a href="http://www.gnu.org/licenses">http://www.gnu.org/licenses</a>.
  */
 package lsystem;
 
@@ -25,7 +25,7 @@ import processing.core.PApplet;
  * expected input is a context string. There is ability to ignore certain
  * characters (eg []0-9) when determining context.
  *
- * @author Martin Prout
+*
  */
 public class CSGrammar implements Grammar {
 
@@ -39,8 +39,8 @@ public class CSGrammar implements Grammar {
     /**
      * Preferred constructor for processing
      *
-     * @param parent
-     * @param axiom
+     * @param parent PApplet
+     * @param axiom String
      */
     public CSGrammar(PApplet parent, String axiom) {
         this.parent = parent;
@@ -57,7 +57,7 @@ public class CSGrammar implements Grammar {
     /**
      * Default constructor for testing
      *
-     * @param axiom
+     * @param axiom String
      */
     public CSGrammar(String axiom) {
         this.axiom = axiom;
@@ -103,7 +103,7 @@ public class CSGrammar implements Grammar {
      * @param premise char
      * @param production String
      * @param count int
-     * @return
+     * @return rule as StringBuilder
      */
     public StringBuilder getRule(char premise, String production, int count) {
         return rules.getCSRule(premise, production, count);
@@ -140,7 +140,7 @@ public class CSGrammar implements Grammar {
 
     /**
      * Private parseRules helper function
-     *
+     * @param production String
      * @return production String
      */
     private String parseRules(String production) {

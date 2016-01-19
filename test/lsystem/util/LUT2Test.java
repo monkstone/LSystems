@@ -5,7 +5,7 @@ import org.junit.*;
 
 /**
  *
- * @author Martin Prout <martin_p@lineone.net>
+* 
  */
 public class LUT2Test {
     

@@ -1,4 +1,5 @@
- /* 
+
+/* 
  * Copyright (c) 2011-16 Martin Prout
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -10,7 +11,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see @see <a href="http://www.gnu.org/licenses">http://www.gnu.org/licenses</a>.
  */
 
 /*
@@ -35,7 +36,7 @@ import processing.event.MouseEvent;
  * Supports the ArcBall and MouseWheel zoom manipulation of objects in
  * processing
  *
- * @author Martin Prout
+*
  */
 public class ArcBall {
 
@@ -56,19 +57,18 @@ public class ArcBall {
 
     /**
      *
-     * @param parent PApplet
+     * @param parent PApplet PApplet
      * @param center_x float x coordinate of arcball center
      * @param center_y float y coordinate of arcball center
      * @param radius float radius of arcball
      */
     public ArcBall(final PApplet parent, float center_x, float center_y, float radius) {
-        this.zoomWheelHandler = (final float delta) -> {
-            zoom += delta * 0.05f;
-        } //   @Override
-//            public void handleWheel(final int delta) {
-//                zoom += delta * 0.05f;
-//            }
-        ;
+        this.zoomWheelHandler = new WheelHandler() {
+            @Override
+            public void handleWheel(final int delta) {
+                zoom += delta * 0.05f;
+            }
+        };
         this.parent = parent;
         this.center_x = center_x;
         this.center_y = center_y;
@@ -86,7 +86,7 @@ public class ArcBall {
     /**
      * Default centered arcball and half width or half height whichever smaller
      *
-     * @param parent
+     * @param parent PApplet
      */
     public ArcBall(final PApplet parent) {
         this(parent, parent.width / 2.0f, parent.height / 2.0f, Math.min(parent.width, parent.height) * 0.5F);
@@ -96,7 +96,7 @@ public class ArcBall {
     /**
      * mouse event to register
      *
-     * @param e
+     * @param e MouseEvent
      */
     public void mouseEvent(MouseEvent e) {
         int x = e.getX();
@@ -123,7 +123,7 @@ public class ArcBall {
     /**
      * key event to register
      *
-     * @param e
+     * @param e MouseEvent
      */
     public void keyEvent(processing.event.KeyEvent e) {
         if (e.getAction() != KeyEvent.PRESS) {
@@ -157,7 +157,7 @@ public class ArcBall {
      * May or may not be required for use in Web Applet it works so why worry as
      * used by Jonathan Feinberg peasycam, and that works OK
      *
-     * @param active
+     * @param active boolean
      */
     public final void setActive(boolean active) {
         if (active != isActive) {
@@ -188,8 +188,8 @@ public class ArcBall {
     /**
      * Returns the PVector of the constrain PVector if constrained
      *
-     * @param x
-     * @param y
+     * @param x float
+     * @param y float
      * @return movement vector (subject to any constrain)
      */
     public AVector mouse2sphere(float x, float y) {
@@ -211,8 +211,8 @@ public class ArcBall {
     /**
      * Returns the PVector if the axis is constrained
      *
-     * @param vector
-     * @param axis
+     * @param vector AVector
+     * @param axis AVector
      * @return need not be constrained to any axis, could be a vector
      */
     public AVector constrainVector(AVector vector, AVector axis) {
@@ -224,7 +224,7 @@ public class ArcBall {
     /**
      * Constrain rotation to this axis
      *
-     * @param axis
+     * @param axis Constrain
      */
     public void constrain(Constrain axis) {
         this.axis = axis;
@@ -233,7 +233,7 @@ public class ArcBall {
     /**
      * Rotate the parent sketch according to the quaternion
      *
-     * @param q
+     * @param q AQuat
      */
     public void applyQuaternion2Matrix(AQuat q) {
         // instead of transforming q into a matrix and applying it...

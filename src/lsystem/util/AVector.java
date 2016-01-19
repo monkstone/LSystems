@@ -1,4 +1,5 @@
- /* 
+
+/* 
  * Copyright (c) 2012-16 Martin Prout
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -10,16 +11,15 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see @see <a href="http://www.gnu.org/licenses">http://www.gnu.org/licenses</a>.
  */
 
 package lsystem.util;
 
 /**
  * A lighter weight vector class
- *
- * @author Martin Prout
  */
+ 
 public final class AVector {
 
     /**
@@ -47,9 +47,9 @@ public final class AVector {
     /**
      * Parameterized constructor
      *
-     * @param x
-     * @param y
-     * @param z
+     * @param x float     
+     * @param y float
+     * @param z float
      */
     public AVector(float x, float y, float z) {
         this.x = x;
@@ -59,7 +59,7 @@ public final class AVector {
 
     /**
      * Copy constructor
-     * @param v1
+     * @param v1 AVector
      */
     public AVector(AVector v1) {
         this.x = v1.x;
@@ -69,7 +69,7 @@ public final class AVector {
 
     /**
      * Normalize this vector (and sensibly return it) 
-     * @return
+     * @return this AVector normalized
      */
     public AVector normalize() {
         double orig_dist = Math.sqrt(x * x + y * y + z * z);
@@ -93,8 +93,8 @@ public final class AVector {
 
     /**
      *
-     * @param v
-     * @return
+     * @param v AVector
+     * @return a new AVector cross product
      */
     public AVector cross(AVector v) {
         return new AVector(y * v.z - v.y * z, z * v.x - v.z * x, x * v.y - v.x * y);

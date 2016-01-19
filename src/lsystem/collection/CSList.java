@@ -27,10 +27,10 @@ import lsystem.collection.csrule.ContextRule;
 /**
  * A storage class for context sensitive LSystem rules, accepts simple LSystem
  * rules as well (however as yet stochastic rules are not accepted).
- * The expected format for context is 'x>z' or 'x<z' where x is the context char.
- * '<' is before and '>' is after z is the premis or character to be replaced.
+ * The expected format for context is 'x&gt;z' or 'x&lt;z' where x is the context char.
+ * '&lt;' is before and '&gt;' is after z is the premis or character to be replaced.
  * There is ability to ignore certain characters (eg []0-9) when determining context.
- * @author Martin Prout
+*
  */
 public class CSList {
 
@@ -86,9 +86,8 @@ public class CSList {
 
     /**
      *
-     * @param pre
-     * @param rule
-     * @throws RuntimeException
+     * @param pre String
+     * @param rule String
      */
     public void addRule(String pre, String rule) throws RuntimeException {
         ContextRule context = new ContextRule(pre);
@@ -98,9 +97,8 @@ public class CSList {
 
     /**
      *
-     * @param pre
-     * @param rule
-     * @throws RuntimeException
+     * @param pre char
+     * @param rule String
      */
     public void addRule(char pre, String rule) throws RuntimeException {
         rules.put(pre, rule);
@@ -108,10 +106,9 @@ public class CSList {
 
     /**
      *
-     * @param pre
-     * @param rule
-     * @param weight
-     * @throws RuntimeException
+     * @param pre char
+     * @param rule String
+     * @param weight float
      */
     public void addRule(char pre, String rule, float weight) throws RuntimeException {
         throw new UnsupportedOperationException("Not supported yet.");
@@ -160,7 +157,7 @@ public class CSList {
 
     /**
      *
-     * @param pre
+     * @param pre char
      * @return true if 'pre' has an associated  rule
      */
     public boolean hasRule(char pre) {

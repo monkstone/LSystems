@@ -10,7 +10,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see @see <a href="http://www.gnu.org/licenses">http://www.gnu.org/licenses</a>.
  */
 package lsystem;
 
@@ -24,7 +24,7 @@ import processing.core.PApplet;
  * Implements Grammar interface SimpleGrammar class that provides convenience
  * method for working with l-systems
  *
- * @author Martin Prout
+*
  */
 public class SimpleGrammar implements Grammar {
 
@@ -38,8 +38,8 @@ public class SimpleGrammar implements Grammar {
     // preferred constructor?
     /**
      *
-     * @param parent
-     * @param axiom
+     * @param parent PApplet
+     * @param axiom String
      */
     public SimpleGrammar(PApplet parent, String axiom) {
         this.parent = parent;
@@ -56,7 +56,7 @@ public class SimpleGrammar implements Grammar {
     /**
      * Default constructor for testing
      *
-     * @param axiom
+     * @param axiom String
      */
     public SimpleGrammar(String axiom) {
         this.axiom = axiom;
@@ -85,7 +85,7 @@ public class SimpleGrammar implements Grammar {
 
     /**
      * Private parseRules helper function
-     *
+     * @param production String
      * @return production String
      */
     private String parseRules(String production) {
@@ -146,6 +146,10 @@ public class SimpleGrammar implements Grammar {
         axiom = null;
     }
 
+    /**
+     *
+     * @return grammar as String
+     */
     @Override
     public String toString() {
         StringBuilder description = new StringBuilder("Axiom: ");

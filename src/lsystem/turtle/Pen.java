@@ -10,23 +10,22 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see @see <a href="http://www.gnu.org/licenses">http://www.gnu.org/licenses</a>.
  */
 
 
 package lsystem.turtle;
 
 /**
- * Pen class extends Turtle to include width, length and color parameters
+ * Pen class extends Turtle to include width, len floatgth and col floator parameters
  * includes a drawLine function that calls on PApplet line(x, y, x1, y2);
- * @author Martin Prout
  */
 
 import processing.core.PApplet;
 
 /**
  *
- * @author Martin Prout
+ * @author sid
  */
 public class Pen extends Turtle implements PenInterface {
 
@@ -35,7 +34,7 @@ public class Pen extends Turtle implements PenInterface {
     PApplet parent;
     /**
      * Copy Constructor for pen
-     * @param pen
+     * @param pen Pen
      */
     public Pen(Pen pen) {
         super(pen.getX(), pen.getY(), pen.getTheta());
@@ -47,13 +46,13 @@ public class Pen extends Turtle implements PenInterface {
 
     /**
      * Constructor
-     * @param parent
-     * @param xpos
-     * @param ypos
-     * @param direction
-     * @param len
-     * @param col
-     * @param width
+     * @param parent PApplet
+     * @param xpos float
+     * @param ypos float
+     * @param direction float
+     * @param len float
+     * @param col int
+     * @param width float
      */
     public Pen(PApplet parent, float xpos, float ypos, float direction, float len, int col, float width) {
         super(xpos, ypos, direction);
@@ -65,12 +64,12 @@ public class Pen extends Turtle implements PenInterface {
 
     /**
      *
-     * @param parent
-     * @param xpos
-     * @param ypos
-     * @param direction
-     * @param len
-     * @param col
+     * @param parent PApplet
+     * @param xpos float
+     * @param ypos float
+     * @param direction float
+     * @param len float
+     * @param col int
      */
     public Pen(PApplet parent, float xpos, float ypos, float direction, float len, int col) {
         super(xpos, ypos, direction);
@@ -82,17 +81,17 @@ public class Pen extends Turtle implements PenInterface {
 
     /**
      *
-     * @param parent
-     * @param xpos
-     * @param ypos
-     * @param direction
-     * @param len
+     * @param parent PApplet
+     * @param xpos float
+     * @param ypos float
+     * @param direction float
+     * @param len float
      */
     public Pen(PApplet parent, float xpos, float ypos, float direction, float len) {
         super(xpos, ypos, direction);
         this.parent = parent;
         this.len = len;
-        this.col = 0;  // default color black (white -1)
+        this.col = 0;  // default col floator black (white -1)
         this.width = 1.0f;
     }
 
@@ -101,8 +100,8 @@ public class Pen extends Turtle implements PenInterface {
     }
 
     /**
-     * Line color getter
-     * @return length float
+     * Line col floator getter
+     * @return len float
      */
     @Override
     public float getLength() {
@@ -110,7 +109,7 @@ public class Pen extends Turtle implements PenInterface {
     }
 
      /**
-     * line color getter
+     * line col floator getter
      * @return length int
      */
     @Override
@@ -137,7 +136,7 @@ public class Pen extends Turtle implements PenInterface {
     }
 
     /**
-     * line color setter
+     * line col floator setter
      * @param col int
      */
     @Override
@@ -147,7 +146,7 @@ public class Pen extends Turtle implements PenInterface {
 
     /**
      * Length setter
-     * @param len
+     * @param len float
      */
     @Override
     public void setLength(float len) {
@@ -155,8 +154,8 @@ public class Pen extends Turtle implements PenInterface {
     }
 
     /**
-     * Facility to change element length
-     * @param factor
+     * Facility to change element len floatgth
+     * @param factor float
      */
     @Override
     public void resizeLength(float factor){
@@ -165,7 +164,7 @@ public class Pen extends Turtle implements PenInterface {
 
     /**
      * With plants in mind using bit shift to increment green
-     * @param increment
+     * @param increment int
      */
     @Override
     public void incrementGreen(int increment){
@@ -176,7 +175,7 @@ public class Pen extends Turtle implements PenInterface {
 
     /**
      * Evaluate number of repeats and change value of theta
-     * @param repeats
+     * @param repeats int
      */
     @Override
     public void turnLeft(int repeats){
@@ -184,7 +183,7 @@ public class Pen extends Turtle implements PenInterface {
     }
     /**
      *  Evaluate number of repeats and change value of theta
-     * @param repeats
+     * @param repeats int
      */
     @Override
     public void turnRight(int repeats){

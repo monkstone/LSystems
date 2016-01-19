@@ -10,7 +10,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see @see <a href="http://www.gnu.org/licenses">http://www.gnu.org/licenses</a>.
  */
 
 package lsystem.turtle;
@@ -22,7 +22,7 @@ import java.util.logging.Logger;
 
 /**
  * A turtle to store position and direction
- * @author Martin Prout
+*
  */
 public class Turtle implements Cloneable, TurtleInterface {
 
@@ -30,7 +30,8 @@ public class Turtle implements Cloneable, TurtleInterface {
 
     /**
      * Copy Constructor
-     * @param turtle
+     * @param turtle Turtle
+     
      */
     public Turtle(Turtle turtle) {
         this.x = turtle.getX();
@@ -41,9 +42,9 @@ public class Turtle implements Cloneable, TurtleInterface {
 
     /**
      * Constructor
-     * @param x
-     * @param y
-     * @param angle
+     * @param x float
+     * @param y float
+     * @param angle float
      */
     public Turtle(float x, float y, float angle) {
         this.x = x;
@@ -109,7 +110,7 @@ public class Turtle implements Cloneable, TurtleInterface {
 
     /**
      * Angle setter
-     * @param theta
+     * @param theta float
      */
     @Override
     public void setTheta(float theta) {

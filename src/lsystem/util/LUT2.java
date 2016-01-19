@@ -10,11 +10,11 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see @see <a href="http://www.gnu.org/licenses">http://www.gnu.org/licenses</a>.
  */
 
 /**
- * A restricted lookup table for fast sine & cosine computations. The table 
+ * A restricted lookup table for fast sine and cosine computations. The table 
  * currently has a fixed precision of 0.25 degrees. Thus might be adequate for 
  * many purposes. There will be errors. Note the reduced lookup up table, 
  * is restricted to the first quadrant of sine. Conditional rules are used to 
@@ -23,14 +23,14 @@
  * One annoyance of java is the behaviour of % wrt negative values cf python for 
  * example. A kludge is required to return the complement of 360, which would 
  * not otherwise be required.
- * Use LUT.sin(float deg) & LUT.cos(float deg) for degree entry and 
- * LUT.sinLut(float rad) & LUT.cosLut(float rad) for radians input
+ * Use LUT.sin(float deg) and LUT.cos(float deg) for degree entry and 
+ * LUT.sinLut(float rad) and LUT.cosLut(float rad) for radians input
  */
 package lsystem.util;
 
 /**
  * Lookup table for degree cosine/sine, has a fixed precision ca. 0.25 degrees
- * @author Martin Prout <martin_p@lineone.net>
+* 
  */
 public final class LUT2 {
 

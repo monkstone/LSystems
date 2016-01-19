@@ -10,7 +10,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see @see <a href="http://www.gnu.org/licenses">http://www.gnu.org/licenses</a>.
  */
 package lsystem.turtle;
 
@@ -19,7 +19,8 @@ import processing.core.PApplet;
 
 /**
  *
- * @author Martin Prout <martin_p@lineone.net>
+* 
+ * @author sid
  */
 public class RodTurtle implements Turtle3D {
 
@@ -31,7 +32,7 @@ public class RodTurtle implements Turtle3D {
     /**
      * initialise and instance of RodTurtle
      *
-     * @param parent
+     * @param parent PApplet
      */
     public RodTurtle(PApplet parent) {
         this.parent = parent;
@@ -45,8 +46,8 @@ public class RodTurtle implements Turtle3D {
 
     /**
      *
-     * @param distance
-     * @param depth
+     * @param distance float
+     * @param depth int
      */
     @Override
     public void draw(float distance, int depth) {
@@ -75,7 +76,7 @@ public class RodTurtle implements Turtle3D {
 
     /**
      *
-     * @param angle
+     * @param angle float
      */
     @Override
     public void pitch(float angle) {
@@ -84,7 +85,7 @@ public class RodTurtle implements Turtle3D {
 
     /**
      *
-     * @param angle
+     * @param angle float
      */
     @Override
     public void roll(float angle) {
@@ -93,7 +94,7 @@ public class RodTurtle implements Turtle3D {
 
     /**
      *
-     * @param angle
+     * @param angle float
      */
     @Override
     public void yaw(float angle) {
@@ -104,7 +105,7 @@ public class RodTurtle implements Turtle3D {
      * Wrapper method
      * Draw a smooth cylinder capped at one end with a sphere uses a look up
      * table for sin and cos (NB: degree not radians), arbitrary set ratio of
-     * distance & cylinder radius & detail/level
+     * distance and cylinder radius and detail/level
      * @param distance the length of the cylinder
      */
     public void drawRod(float distance) {
@@ -129,9 +130,9 @@ public class RodTurtle implements Turtle3D {
     * Draw a smooth cone section with radii r1, r2, perpendicular distance 
     * level is inverse of detail, capped with a sphere
     * @param distance length of rod/truncated cone
-    * @param r1  radius1
-    * @param r2  radius2 (r1 = r2 rod) (r1 not equal r2 truncated cone/or cone?)
-    * @param level 
+    * @param r1 radius1 float
+    * @param r2 radius2 (r1 = r2 rod) (r1 not equal r2 truncated cone/or cone?)
+    * @param level int
     */
 
    

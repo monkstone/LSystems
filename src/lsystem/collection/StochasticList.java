@@ -10,7 +10,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see @see <a href="http://www.gnu.org/licenses">http://www.gnu.org/licenses</a>.
  */
 package lsystem.collection;
 
@@ -22,7 +22,7 @@ import lsystem.collection.wrule.WeightedRule;
  * A storage class for weighted rules holds/implements the weighted selection
  * logic (now as inner class since version 0.74 [24 November 2011-14])
  *
- * @author Martin Prout
+*
  */
 public class StochasticList implements RuleList {
 
@@ -70,12 +70,19 @@ public class StochasticList implements RuleList {
     }
 
     @Override
+    /**
+     * @param pre char
+     * @return rule String
+     */
     public String getRule(char pre) {
         List<WeightedRule> temp = weightedRules.get(pre);
         return getStochasticRule(temp);
     }
 
     @Override
+    /**
+     * @return as StringBuilder
+     */
     public StringBuilder toStringBuilder() {
         StringBuilder sb = new StringBuilder("Rules:\n");
         premises.stream().map((Character premis) -> {

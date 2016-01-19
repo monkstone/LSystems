@@ -10,14 +10,14 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see @see <a href="http://www.gnu.org/licenses">http://www.gnu.org/licenses</a>.
  */
 
 package lsystem;
 import java.text.CharacterIterator;
 /**
  * Grammar interface for Lindenmayer Systems
- * @author Martin Prout
+*
  */
 public interface Grammar {
     
@@ -35,23 +35,24 @@ public interface Grammar {
 
     /**
      * add unweighted rule
-     * @param premise
-     * @param rule
+     * @param premise char
+     * @param rule String
      */
     void addRule(char premise, String rule);
 
     /**
      * add weighted rule for stochastic L-System
-     * @param premise
-     * @param rule
-     * @param weight
+     * @param premise char
+     * @param rule String
+     * @param weight float
      */
     void addRule(char premise, String rule, float weight);
     
     /**
      * Creates production from axiom, rules and no of
      * generations
-     * @param repeats
+     *
+     * @param repeats int
      */
     void generateGrammar(int repeats);
 
@@ -76,15 +77,15 @@ public interface Grammar {
 
     /**
      *
-     * @param premise
-     * @return rule
+     * @param premise char
+     * @return rule char
      */
     String getRule(char premise);
 
     /**
      *
-     * @param premise
-     * @return true
+     * @param premise char
+     * @return true boolean
      */
     boolean hasKey(char premise);
 

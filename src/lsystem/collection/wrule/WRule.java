@@ -3,7 +3,7 @@ package lsystem.collection.wrule;
 /* 
  * Copyright (c) 2011-14 Martin Prout
  * 
- * This demo & library is free software; you can redistribute it and/or
+ * This demo and library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
  * version 2.1 of the License, or (at your option) any later version.
@@ -21,7 +21,8 @@ package lsystem.collection.wrule;
  */
 /**
  * 
- * @author Martin Prout
+*
+ * @author sid
  */
 public class WRule implements WeightedRule {
 
@@ -30,8 +31,8 @@ public class WRule implements WeightedRule {
 
     /**
      * Two parameter constructor, explicitly set weighting
-     * @param rule
-     * @param weight
+     * @param rule String
+     * @param weight float
      */
     public WRule(String rule, float weight) {
         this.rule = rule;
@@ -40,7 +41,7 @@ public class WRule implements WeightedRule {
 
     /**
      * One parameter constructor, default weighting is 1.0f
-     * @param rule
+     * @param rule String
      */
     public WRule(String rule) {
         this(rule, 1.0f);
@@ -48,7 +49,7 @@ public class WRule implements WeightedRule {
 
     /**
      * 
-     * @return
+     * @return weight float
      */
     @Override
     public float getWeight() {
@@ -57,13 +58,17 @@ public class WRule implements WeightedRule {
 
     /**
      * 
-     * @return
+     * @return rule String
      */
     @Override
     public String getValue() {
         return rule;
     }
-
+    
+    /**
+     * 
+     * @return wrule as a String
+     */
     @Override
     public String toString() {
         return String.format("     %s\tWeight [%f]", rule, weight);

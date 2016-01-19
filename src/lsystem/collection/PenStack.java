@@ -10,7 +10,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see @see <a href="http://www.gnu.org/licenses">http://www.gnu.org/licenses</a>.
  */
 
 package lsystem.collection;
@@ -22,7 +22,7 @@ import processing.core.PApplet;
 
 /**
  * A Pen tuned stack with minimal interface
- * @author Martin Prout
+*
  */
 public class PenStack implements StackInterface{
 
@@ -31,7 +31,7 @@ public class PenStack implements StackInterface{
     /**
      * Stack constructor
      * allows stack instance to be registered with PApplet
-     * @param parent
+     * @param parent PApplet
      */
     public PenStack(PApplet parent) {
         parent.registerMethod("dispose", this);
@@ -48,7 +48,7 @@ public class PenStack implements StackInterface{
 
     /**
      * Pen push
-     * @param pen
+     * @param pen Pen
      */
     public void push(Pen pen) {
         if (pen != null) {
@@ -65,7 +65,7 @@ public class PenStack implements StackInterface{
 
     /**
      * Pen pop
-     * @return Pen Pen
+     * @return pen Pen
      */
     @Override
     public Pen pop() {

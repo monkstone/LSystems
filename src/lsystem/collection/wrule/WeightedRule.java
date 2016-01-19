@@ -3,7 +3,7 @@ package lsystem.collection.wrule;
 /* 
  * Copyright (c) 2011-14 Martin Prout
  * 
- * This demo & library is free software; you can redistribute it and/or
+ * This demo and library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
  * version 2.1 of the License, or (at your option) any later version.
@@ -21,19 +21,20 @@ package lsystem.collection.wrule;
  */
 /**
  * 
- * @author Martin Prout
+*
+ * @author sid
  */
 public interface WeightedRule {
 
     /**
      *
-     * @return
+     * @return float
      */
     public float getWeight();
 
 /**
  * 
- * @return
+ * @return String
  */
     public String getValue();
 }

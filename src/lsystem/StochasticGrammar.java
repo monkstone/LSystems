@@ -10,7 +10,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see @see <a href="http://www.gnu.org/licenses">http://www.gnu.org/licenses</a>.
  */
 package lsystem;
 
@@ -24,7 +24,7 @@ import processing.core.PApplet;
  * StochasticGrammar class that provides convenience method for working with
  * l-systems
  *
- * @author Martin Prout
+*
  */
 public class StochasticGrammar implements Grammar {
 
@@ -39,8 +39,8 @@ public class StochasticGrammar implements Grammar {
     /**
      * Constructor for use with processing Applet
      *
-     * @param parent
-     * @param axiom
+     * @param parent PApplet
+     * @param axiom String
      */
     public StochasticGrammar(PApplet parent, String axiom) {
         this.parent = parent;
@@ -57,7 +57,7 @@ public class StochasticGrammar implements Grammar {
     /**
      * Default constructor for testing
      *
-     * @param axiom
+     * @param axiom String
      */
     public StochasticGrammar(String axiom) {
         this.axiom = axiom;
@@ -172,6 +172,10 @@ public class StochasticGrammar implements Grammar {
         rules.clear();
     }
 
+    /**
+     *
+     * @return grammar as String
+     */
     @Override
     public String toString() {
         StringBuilder description = new StringBuilder("Axiom: ");
@@ -184,7 +188,7 @@ public class StochasticGrammar implements Grammar {
     /**
      * return the version of the library.
      *
-     * @return String
+     * @return version as a String
      */
     @Override
     public final String version() {
@@ -194,7 +198,7 @@ public class StochasticGrammar implements Grammar {
     /**
      * return the target processing version of the library.
      *
-     * @return String
+     * @return target String
      */
     @Override
     public final String target() {
@@ -204,6 +208,4 @@ public class StochasticGrammar implements Grammar {
     private void setActive() {
         parent.registerMethod("dispose", this);
     }
-
-
 }

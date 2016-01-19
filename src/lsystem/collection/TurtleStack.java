@@ -10,7 +10,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see @see <a href="http://www.gnu.org/licenses">http://www.gnu.org/licenses</a>.
  */
 
 package lsystem.collection;
@@ -23,7 +23,7 @@ import processing.core.PApplet;
 
 /**
  * A turtle tuned stack with minimal interface
- * @author Martin Prout
+*
  */
 public class TurtleStack implements StackInterface {
 
@@ -32,7 +32,7 @@ public class TurtleStack implements StackInterface {
     /**
      * Stack constructor
      * allows stack instance to be registered with PApplet
-     * @param parent
+     * @param parent PApplet
      */
     public TurtleStack(PApplet parent) {
         parent.registerMethod("dispose", this);

@@ -10,7 +10,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see @see <a href="http://www.gnu.org/licenses">http://www.gnu.org/licenses</a>.
  */
 
 package lsystem.collection;
@@ -22,7 +22,7 @@ import java.util.TreeSet;
 
 /**
  * A storage class for non-stochastic rules
- * @author Martin Prout
+*
  */
 public class SimpleRuleList implements RuleList{
     private final Set<Character>premises;

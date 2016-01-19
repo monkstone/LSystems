@@ -10,14 +10,15 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see @see <a href="http://www.gnu.org/licenses">http://www.gnu.org/licenses</a>.
  */
 
 package lsystem.turtle;
 
 /**
  *
- * @author Martin Prout
+*
+ * @author sid
  */
 public interface TurtleInterface{
 
@@ -52,7 +53,7 @@ public interface TurtleInterface{
 
     /**
      * Angle setter
-     * @param theta
+     * @param theta float
      */
     void setTheta(float theta);
 

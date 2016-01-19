@@ -10,7 +10,7 @@ import processing.core.PApplet;
 
 /**
  * 
- * @author Martin Prout
+*
  */
 public class rodHilbert2 extends PApplet {
 
@@ -28,7 +28,7 @@ public class rodHilbert2 extends PApplet {
     /* 
      * Copyright (c) 2011-14 Martin Prout
      * 
-     * This demo & library is free software; you can redistribute it and/or
+     * This demo and library is free software; you can redistribute it and/or
      * modify it under the terms of the GNU Lesser General Public
      * License as published by the Free Software Foundation; either
      * version 2.1 of the License, or (at your option) any later version.

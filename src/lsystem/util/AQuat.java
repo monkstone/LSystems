@@ -1,3 +1,4 @@
+
 /* 
  * Copyright (c) 2011-14 Martin Prout
  * 
@@ -26,7 +27,7 @@ package lsystem.util;
  * http://dl.acm.org/citation.cfm?id=325242
  * A google of the quaternions term will find a 
  * freely down-loadable article by Ken Shoemake.
- * @author Martin Prout
+*
  */
 public final class AQuat {
 
@@ -41,10 +42,10 @@ public final class AQuat {
 
     /**
      * 
-     * @param w
-     * @param x
-     * @param y
-     * @param z
+     * @param w float
+     * @param x float
+     * @param y float
+     * @param z float
      */
     public AQuat(float w, float x, float y, float z) {
         this.w = w;
@@ -77,7 +78,7 @@ public final class AQuat {
 
     /**
      * 
-     * @param q
+     * @param q AQuat
      */
     public void set(AQuat q) {
         w = q.w;
@@ -88,8 +89,8 @@ public final class AQuat {
 
     /**
      * 
-     * @param q1
-     * @param q2
+     * @param q1 AQuat
+     * @param q2 AQuat
      * @return product of q1 and q2 AQuat
      */
     public static AQuat mult(AQuat q1, AQuat q2) {
@@ -102,7 +103,7 @@ public final class AQuat {
     
     /**
      * Transform this Quaternion into an angle (radians) and an axis vector, about 
-     * which to rotate (avoids NaN by setting sa to 1.0F when sa < epsilon)
+     * which to rotate (avoids NaN by setting sa to 1.0F when sa &lt; epsilon)
      * @return a new float[] where a0 = angle and a1 .. a3 are axis vector
      */
 

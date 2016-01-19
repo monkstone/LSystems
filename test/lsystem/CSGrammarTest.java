@@ -12,7 +12,7 @@ import static org.junit.Assert.assertEquals;
 
 /**
  *
- * @author Martin Prout
+*
  */
 public class CSGrammarTest {
     CSGrammar instance;

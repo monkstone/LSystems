@@ -10,12 +10,12 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see @see <a href="http://www.gnu.org/licenses">http://www.gnu.org/licenses</a>.
  */
 package lsystem.util;
 
 /**
- * A very restricted lookup table for fast sine & cosine computations. The table 
+ * A very restricted lookup table for fast sine and cosine computations. The table 
  * currently has a fixed precision of 1.0 degrees. Thus should be as accurate as 
  * Math.sin when using integer input. However with a float input, values are 
  * cast to integer, and there will be errors. Note the reduced lookup up table, 

@@ -24,7 +24,7 @@ package lsystem.collection.csrule;
  * A helper class for context sensitive LSystem rules
  * helps to decode the context elements and extracts the premis character
  *
- * @author Martin Prout
+*
  */
 public class ContextRule {
 
@@ -34,9 +34,9 @@ public class ContextRule {
     private final char context;  // character that is context
 
     /**
-    Constructor for ContextRule, holds all the logic so that only relevant data is
-    stored
-     * @param context
+     * Constructor for ContextRule, holds all the logic so that only relevant data is
+     * stored
+     * @param context String
      */
     public ContextRule(String context) {
         this.keyHash = context;

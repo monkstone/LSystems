@@ -14,7 +14,7 @@ import org.junit.runners.Suite;
 
 /**
  *
- * @author Martin Prout
+*
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({lsystem.GrammarTest.class})

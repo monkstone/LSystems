@@ -11,7 +11,7 @@ import org.junit.*;
 
 /**
  * Very limited context rule tests
- * @author Martin Prout
+*
  */
 public class ContextRuleTest {
 
