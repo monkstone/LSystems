@@ -103,7 +103,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>2.10.3</version>
         <configuration>
-         <detectOfflineLinks>true</detectOfflineLinks>
+         <detectOfflineLinks>false</detectOfflineLinks>
           <links>
             <link>http://docs.oracle.com/javase/7/docs/api/</link>
             <link>http://processing.github.io/processing-javadocs/core/</link>
