@@ -4,11 +4,12 @@ LSystems Library for Processing-3.0
 Mostly just works requires building:
 
 ```bash
-mvn package
+mvn package # builds the jar
+mvn javadoc:javadoc # generates the javadoc as a site
 ```
 
 The lsystems.jar gets built into target folder copy to your processing-3.0 `libraries/lsystems/library`
 
-I just can't get on with prisoner johns template...............
+I just can't get on with prisoner johns template, and anyway he's got wrong link for processing api...............
 
 More examples to come
