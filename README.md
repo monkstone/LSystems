@@ -14,3 +14,5 @@ The lsystems.jar gets built into target folder copy to your processing-3.0 `libr
 I just can't get on with prisoner johns template, and anyway he's got wrong link for processing api...............
 
 More examples to come
+
+Install as you would other libraries
