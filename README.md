@@ -6,6 +6,7 @@ Mostly just works requires building:
 ```bash
 mvn package # builds the jar
 mvn javadoc:javadoc # generates the javadoc as a site
+bash createLibrary.sh # generates a tar file lsystems.tgz 
 ```
 
 The lsystems.jar gets built into target folder copy to your processing-3.0 `libraries/lsystems/library`
