@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Copyright (C) 2016 Martin Prout
+Copyright (C) 2016-17 Martin Prout
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
@@ -57,12 +57,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
+  <repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+  </repositories>
   <dependencies>
     <dependency>
       <groupId>org.processing</groupId>
       <artifactId>core</artifactId>
-      <version>3.0.1</version>
+      <version>3.3.6</version>
     </dependency>
+    <dependency>
+    	    <groupId>com.github.monkstone</groupId>
+    	    <artifactId>LSystems</artifactId>
+    	    <version>-SNAPSHOT</version>
+    	</dependency>
   </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
