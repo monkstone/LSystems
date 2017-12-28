@@ -1,6 +1,6 @@
 
 /* 
- * Copyright (c) 2011-14 Martin Prout
+ * Copyright (c) 2011-17 Martin Prout
  * 
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public

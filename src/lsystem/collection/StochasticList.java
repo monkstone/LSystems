@@ -20,7 +20,7 @@ import lsystem.collection.wrule.WeightedRule;
 
 /**
  * A storage class for weighted rules holds/implements the weighted selection
- * logic (now as inner class since version 0.74 [24 November 2011-14])
+ * logic (now as inner class since version 0.74 [24 November 2011-17])
  *
 *
  */
