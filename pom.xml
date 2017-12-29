@@ -59,8 +59,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   </properties>
   <repositories>
     <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
     </repository>
   </repositories>
   <dependencies>
@@ -70,10 +70,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       <version>3.3.6</version>
     </dependency>
     <dependency>
-    <groupId>com.github.monkstone</groupId>
-    <artifactId>LSystems</artifactId>
-    <version>1.1.0</version>
-</dependency>
+      <groupId>com.github.monkstone</groupId>
+      <artifactId>LSystems</artifactId>
+      <version>1.1.0</version>
+    </dependency>
+  </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <defaultGoal>package</defaultGoal>
@@ -113,7 +114,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>2.10.4</version>
         <configuration>
-         <detectOfflineLinks>false</detectOfflineLinks>
+          <detectOfflineLinks>false</detectOfflineLinks>
           <links>
             <link>http://docs.oracle.com/javase/7/docs/api/</link>
             <link>http://processing.github.io/processing-javadocs/core/</link>
