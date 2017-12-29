@@ -1,6 +1,6 @@
- /* 
+ /*
  * Copyright (c) 2011-16 Martin Prout
- * 
+ *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -20,18 +20,18 @@ import java.text.CharacterIterator;
 *
  */
 public interface Grammar {
-    
+
     /**
-     * 
+     *
      */
-    public final String VERSION = "1.1.0";
-    
+    public final String VERSION = "1.1.1";
+
     /**
-     * 
+     *
      */
-    public final String TARGET = "processing-3.0.1";
-    
-    
+    public final String TARGET = "processing-3.3.6";
+
+
 
     /**
      * add unweighted rule
@@ -47,7 +47,7 @@ public interface Grammar {
      * @param weight float
      */
     void addRule(char premise, String rule, float weight);
-    
+
     /**
      * Creates production from axiom, rules and no of
      * generations
@@ -60,14 +60,14 @@ public interface Grammar {
      * Useful for testing no generations
      */
     void generateGrammar();
-    
+
  /**
-  * 
+  *
   * Makes the CharacterIterator available internally/externally
   * Create a new instance if none exists otherwise re-use existing instance
   * @return lIterator the grammar CharacterIterator
   */
-    
+
     CharacterIterator getIterator();
 
     /**
@@ -95,7 +95,7 @@ public interface Grammar {
      * @return String
      */
     String version();
-    
+
     /**
      * return the target processing version of the library.
      *
