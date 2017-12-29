@@ -70,11 +70,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       <version>3.3.6</version>
     </dependency>
     <dependency>
-    	    <groupId>com.github.monkstone</groupId>
-    	    <artifactId>LSystems</artifactId>
-    	    <version>1.1.0</version>
-    	</dependency>
-  </dependencies>
+    <groupId>com.github.monkstone</groupId>
+    <artifactId>LSystems</artifactId>
+    <version>1.1.0</version>
+</dependency>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <defaultGoal>package</defaultGoal>
