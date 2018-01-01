@@ -15,7 +15,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>monkstone</groupId>
-  <artifactId>lsystems</artifactId>
+  <artifactId>LSystems</artifactId>
   <version>1.1.1</version>
   <name>lsystems</name>
   <description>lsystems for LSystems</description>
