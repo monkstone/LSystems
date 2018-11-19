@@ -12,7 +12,7 @@ import lsystem.util.LUT;
  */
  
  /* 
- * Copyright (c) 2011-16 Martin Prout
+ * Copyright (c) 2011-18 Martin Prout
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
