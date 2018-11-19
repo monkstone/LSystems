@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Copyright (C) 2016-17 Martin Prout
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+DO NOT MODIFIY - GENERATED CODE
+
+
 -->
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>monkstone</groupId>
-  <artifactId>LSystems</artifactId>
+  <artifactId>lsystems</artifactId>
   <version>1.1.1</version>
-  <name>lsystems</name>
-  <description>lsystems for LSystems</description>
+  <name>rp5extras</name>
+  <description>LSystems for Vanill Processing</description>
   <url>https://github.com/monkstone/LSystems</url>
   <organization>
     <name>monkstone</name>
@@ -26,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   </organization>
   <developers>
     <developer>
-      <id>com.github.monkstone</id>
+      <id>monkstone</id>
       <name>Martin Prout</name>
       <email>mamba2928@yahoo.co.uk</email>
       <roles>
@@ -34,14 +29,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       </roles>
     </developer>
   </developers>
-  <licenses>
-    <license>
-      <name>GNU General Public License, Version 3</name>
-      <url>http://www.gnu.org/licenses/gpl-3.0.html</url>
-      <distribution>manual</distribution>
-      <comments>A free, copyleft license for software and other kinds of works</comments>
-    </license>
-  </licenses>
   <scm>
     <connection>scm:git:git://github.com/monkstone/LSystems.git</connection>
     <developerConnection>scm:git:git@github.com/monkstone/LSystems.git</developerConnection>
@@ -52,27 +39,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <url>https://github.com/monkstone/LSystems/issues</url>
   </issueManagement>
   <properties>
-    <polyglot.dump.pom>pom.xml</polyglot.dump.pom>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <jruby.api>http://jruby.org/apidocs/</jruby.api>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <polyglot.dump.pom>pom.xml</polyglot.dump.pom>
+    <processing.api>http://processing.github.io/processing-javadocs/core/</processing.api>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-  <repositories>
-    <repository>
-      <id>jitpack.io</id>
-      <url>https://jitpack.io</url>
-    </repository>
-  </repositories>
   <dependencies>
     <dependency>
       <groupId>org.processing</groupId>
       <artifactId>core</artifactId>
-      <version>3.3.6</version>
-    </dependency>
-    <dependency>
-      <groupId>com.github.monkstone</groupId>
-      <artifactId>LSystems</artifactId>
-      <version>1.1.1-SNAPSHOT</version>
+      <version>3.3.7</version>
     </dependency>
   </dependencies>
   <build>
@@ -91,36 +69,24 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.7.0</version>
+          <version>3.8.0</version>
           <configuration>
-            <source>1.8</source>
-            <target>1.8</target>
+            <source>${maven.compiler.source}</source>
+            <target>${maven.compiler.target}</target>
           </configuration>
         </plugin>
         <plugin>
-          <artifactId>maven-jar-plugin</artifactId>
-          <version>3.0.2</version>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>2.10.4</version>
           <configuration>
-            <archive>
-              <manifestFile>MANIFEST.MF</manifestFile>
-            </archive>
+            <detectOfflineLinks>false</detectOfflineLinks>
+            <links>
+              <link>${processing.api}</link>
+              <link>${jruby.api}</link>
+            </links>
           </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.10.4</version>
-        <configuration>
-          <detectOfflineLinks>false</detectOfflineLinks>
-          <links>
-            <link>http://docs.oracle.com/javase/7/docs/api/</link>
-            <link>http://processing.github.io/processing-javadocs/core/</link>
-          </links>
-        </configuration>
-      </plugin>
-    </plugins>
   </build>
 </project>
