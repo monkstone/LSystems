@@ -68,20 +68,53 @@
     <jogl.version>2.3.2</jogl.version>
     <processing.api>http://processing.github.io/processing-javadocs/core/</processing.api>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <source.directory>src</source.directory>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
   <build>
+    <resources>
+      <resource>
+        <directory>${source.directory}/main/java</directory>
+        <excludes>
+          <exclude>**/**/*.java</exclude>
+        </excludes>
+      </resource>
+      <resource>
+        <directory>${source.directory}/main/resources</directory>
+        <includes>
+          <include>**/*.png</include>
+          <include>*.txt</include>
+        </includes>
+      </resource>
+    </resources>
     <pluginManagement>
       <plugins>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.0</version>
+          <configuration>
+            <source>${maven.compiler.source}</source>
+            <target>${maven.compiler.target}</target>
+          </configuration>
+        </plugin>        
+        <plugin>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>2.10.4</version>
+          <configuration>
+            <detectOfflineLinks>false</detectOfflineLinks>
+            <links>
+              <link>${processing.api}</link>
+            </links>
+          </configuration>
+        </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.1.0</version>
           <configuration>
-            <includes>
-              <include>${source.directory}/lsystem</include>
-              <exclude>${source.directory}/test</exclude>
-            </includes>
+            <excludes>
+              <exclude>${source.directory}/testrun</exclude>
+            </excludes>
             <finalName>lsystems</finalName>
           </configuration>
         </plugin>
