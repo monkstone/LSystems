@@ -1,4 +1,4 @@
-package test;
+package runtest;
 
 import java.text.CharacterIterator;
 import lsystem.Grammar;
@@ -190,6 +190,6 @@ public class rodHilbert2 extends PApplet {
      * @param args
      */
     static public void main(String args[]) {
-        PApplet.main(new String[]{"--bgcolor=#DFDFDF", "test.rodHilbert2"});
+        PApplet.main(new String[]{"--bgcolor=#DFDFDF", "runtest.rodHilbert2"});
     }
 }

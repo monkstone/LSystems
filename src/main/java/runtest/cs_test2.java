@@ -1,4 +1,4 @@
-package test;
+package runtest;
 
 import processing.core.*; 
 
@@ -115,7 +115,7 @@ public void drawLine(Pen pen) { // draws line and sets new pen position
 }
 
   static public void main(String[] passedArgs) {
-    String[] appletArgs = new String[] { "test.cs_test2" };
+    String[] appletArgs = new String[] { "runtest.cs_test2" };
     if (passedArgs != null) {
       PApplet.main(concat(appletArgs, passedArgs));
     } else {

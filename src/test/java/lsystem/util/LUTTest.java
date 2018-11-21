@@ -5,7 +5,8 @@
 package lsystem.util;
 
 import static org.junit.Assert.assertEquals;
-import org.junit.*;
+
+
 
 /**
  *
@@ -23,7 +24,7 @@ public class LUTTest {
      * 
      * @throws Exception
      */
-    @BeforeClass
+
     public static void setUpClass() throws Exception {
        LUT.initialize();
     }
@@ -32,14 +33,14 @@ public class LUTTest {
      * 
      * @throws Exception
      */
-    @AfterClass
+
     public static void tearDownClass() throws Exception {
     }
     
     /**
      * 
      */
-    @Before
+
     public void setUp() {
         
     }
@@ -47,14 +48,14 @@ public class LUTTest {
     /**
      * 
      */
-    @After
+
     public void tearDown() {
     }
 
     /**
      * Test of sin method, of class LUT.
      */
-    @Test
+
     public void testSin0() {
         System.out.println("sin0");
         int theta = 0;
@@ -66,7 +67,7 @@ public class LUTTest {
     /**
      * Test of cos method, of class LUT.
      */
-    @Test
+
     public void testSinMinus36() {
         System.out.println("minusSine 36f");
         float theta = -36.0f;
@@ -77,7 +78,7 @@ public class LUTTest {
         /**
      * Test of sin method, of class LUT.
      */
-    @Test
+    
     public void testSin320() {
         System.out.println("sin320f");
         float theta = 320.0f;
@@ -89,7 +90,7 @@ public class LUTTest {
     /**
      * Test of cos method, of class LUT.
      */
-    @Test
+    
     public void testSin260() {
         System.out.println("sin260");
         int theta = 260;
@@ -101,7 +102,7 @@ public class LUTTest {
         /**
      * Test of sin method, of class LUT.
      */
-    @Test
+    
     public void testCos0() {
         System.out.println("Cos0");
         int theta = 0;
@@ -113,7 +114,7 @@ public class LUTTest {
     /**
      * Test of cos method, of class LUT.
      */
-    @Test
+    
     public void testCos10() {
         System.out.println("Cos10");
         int theta = 10;
@@ -124,7 +125,7 @@ public class LUTTest {
         /**
      * Test of Cos method, of class LUT.
      */
-    @Test
+    
     public void testCosMinus20() {
         System.out.println("Cos-20");
         int theta = 340;
@@ -136,7 +137,7 @@ public class LUTTest {
         /**
      * Test of cos method, of class LUT.
      */
-    @Test
+    
     public void testCos110() {
         System.out.println("cos110");
         int theta = 110;
@@ -147,7 +148,7 @@ public class LUTTest {
         /**
      * Test of sin method, of class LUT.
      */
-    @Test
+    
     public void testCos320() {
         System.out.println("cos320");
         int theta = 320;
@@ -159,7 +160,7 @@ public class LUTTest {
     /**
      * Test of cos method, of class LUT.
      */
-    @Test
+    
     public void testCos360() {
         System.out.println("Cos360");
         int theta = 360;

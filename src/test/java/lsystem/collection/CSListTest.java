@@ -6,7 +6,7 @@
 package lsystem.collection;
 
 import static org.junit.Assert.assertEquals;
-import org.junit.*;
+
 
 /**
  *
@@ -15,45 +15,45 @@ import org.junit.*;
 public class CSListTest {
 
     /**
-     * 
+     *
      */
     public CSListTest() {
     }
 
     /**
-     * 
+     *
      * @throws Exception
      */
-    @BeforeClass
+ 
     public static void setUpClass() throws Exception {
     }
 
     /**
-     * 
+     *
      * @throws Exception
      */
-    @AfterClass
+   
     public static void tearDownClass() throws Exception {
     }
 
     /**
-     * 
+     *
      */
-    @Before
+
     public void setUp() {
     }
 
     /**
-     * 
+     *
      */
-    @After
+
     public void tearDown() {
     }
 
     /**
      * Test of setIgnoreList method, of class CSList.
      */
-    @Test
+    
     public void testSetIgnoreList_String() {
         System.out.println("setIgnoreList");
         String str = "{}><";
@@ -64,7 +64,7 @@ public class CSListTest {
     /**
      * Test of setIgnoreList method, of class CSList.
      */
-//    @Test
+//    
 //    public void testSetIgnoreList_charArr() {
 //        System.out.println("setIgnoreList");
 //        char[] ignore = {']','['};
@@ -75,7 +75,7 @@ public class CSListTest {
     /**
      * Test of isIgnored method, of class CSList.
      */
-    @Test
+    
     public void testIsIgnored() {
         System.out.println("isIgnored");
         char prod = ' ';
@@ -88,7 +88,7 @@ public class CSListTest {
     /**
      * Test of addRule method, of class CSList.
      */
-    @Test
+    
     public void testAddRule_String_String() {
         System.out.println("addRule");
         String pre = "a<b";
@@ -100,7 +100,7 @@ public class CSListTest {
     /**
      * Test of addRule method, of class CSList.
      */
-    @Test
+    
     public void testAddRule_char_String() {
         System.out.println("addRule");
         char pre = 'a';
@@ -109,12 +109,12 @@ public class CSListTest {
         instance.addRule(pre, rule);
     }
 
-   
+
 
     /**
      * Test of getCSRule method, of class CSList.
      */
-    @Test
+    
     public void testGetCSRule() {
         System.out.println("getCSRule");
         char pre = 'a';
@@ -131,7 +131,7 @@ public class CSListTest {
     /**
      * Test of hasRule method, of class CSList.
      */
-    @Test
+    
     public void testHasRule() {
         System.out.println("hasRule");
         char pre = 'z';
@@ -145,7 +145,7 @@ public class CSListTest {
     /**
      * Test of testToStringBuilder method, of class CSList.
      */
-    @Test
+    
     public void testToStringBuilder() {
         System.out.println("toStringBuilder");
         CSList instance = new CSList();
@@ -158,11 +158,10 @@ public class CSListTest {
     /**
      * Test of clear method, of class CSList.
      */
-    @Test
+    
     public void testClear() {
         System.out.println("clear");
         CSList instance = new CSList();
         instance.clear();
     }
-
 }

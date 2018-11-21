@@ -5,10 +5,15 @@
 
 package lsystem;
 
-import java.text.CharacterIterator;
-import java.text.StringCharacterIterator;
-import org.junit.*;
-import static org.junit.Assert.assertEquals;
+// import java.text.CharacterIterator;
+// import java.text.StringCharacterIterator;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
 
 /**
  *
@@ -17,13 +22,13 @@ import static org.junit.Assert.assertEquals;
 public class CSGrammarTest {
     CSGrammar instance;
     /**
-     * 
+     *
      */
     public CSGrammarTest() {
     }
 
     /**
-     * 
+     *
      * @throws Exception
      */
     @BeforeClass
@@ -31,7 +36,7 @@ public class CSGrammarTest {
     }
 
     /**
-     * 
+     *
      * @throws Exception
      */
     @AfterClass
@@ -39,7 +44,7 @@ public class CSGrammarTest {
     }
 
     /**
-     * 
+     *
      */
     @Before
     public void setUp() {
@@ -48,7 +53,7 @@ public class CSGrammarTest {
     }
 
     /**
-     * 
+     *
      */
     @After
     public void tearDown() {
@@ -138,13 +143,13 @@ public class CSGrammarTest {
     /**
      * Test of getIterator method, of class CSGrammar.
      */
-    @Test
-    public void testGetIterator() {
-        System.out.println("getIterator");
-        CharacterIterator expResult = new StringCharacterIterator( "FFF") ;
-        CharacterIterator result = instance.getIterator();
-        assertEquals(expResult, result);
-    }
+//    @Test
+//    public void testGetIterator() {
+//        System.out.println("getIterator");
+//        CharacterIterator expResult = new StringCharacterIterator( "FFF") ;
+//        CharacterIterator result = instance.getIterator();
+//        assertEquals(expResult, result);
+//    }
 
     /**
      * Test of dispose method, of class CSGrammar.
@@ -155,7 +160,7 @@ public class CSGrammarTest {
         instance.dispose();
     }
 
-  
+
     /**
      * Test of dispose method, of class CSGrammar.
      */
@@ -177,7 +182,7 @@ public class CSGrammarTest {
     @Test
     public void testVersion() {
         System.out.println("version");
-        String expResult = "1.0.0";
+        String expResult = "1.2.0";
         String result = instance.version();
         assertEquals(expResult, result);
     }

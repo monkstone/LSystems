@@ -5,8 +5,12 @@
 
 package lsystem;
 
-import org.junit.*;
-import static org.junit.Assert.assertEquals;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 /**
  *
@@ -102,7 +106,7 @@ public class SimpleGrammarTest {
     public void testVersion() {
         System.out.println("version");
         Grammar instance = new SimpleGrammar("FF");
-        String expResult = "1.0.0";
+        String expResult = "1.2.0";
         String result = instance.version();
         assertEquals(expResult, result);
     }

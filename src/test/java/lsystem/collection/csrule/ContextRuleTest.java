@@ -6,9 +6,12 @@
 package lsystem.collection.csrule;
 
 
-import static org.junit.Assert.assertEquals;
-import org.junit.*;
-
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
 /**
  * Very limited context rule tests
 *
@@ -16,13 +19,13 @@ import org.junit.*;
 public class ContextRuleTest {
 
     /**
-     * 
+     *
      */
     public ContextRuleTest() {
     }
 
     /**
-     * 
+     *
      * @throws Exception
      */
     @BeforeClass
@@ -30,7 +33,7 @@ public class ContextRuleTest {
     }
 
     /**
-     * 
+     *
      * @throws Exception
      */
     @AfterClass
@@ -38,14 +41,14 @@ public class ContextRuleTest {
     }
 
     /**
-     * 
+     *
      */
     @Before
     public void setUp() {
     }
 
     /**
-     * 
+     *
      */
     @After
     public void tearDown() {
