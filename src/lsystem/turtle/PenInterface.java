@@ -17,7 +17,7 @@ package lsystem.turtle;
 
 /**
  *
- * @author sid
+ * @author Martin Prout
  */
 public interface PenInterface extends TurtleInterface{
 

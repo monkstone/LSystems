@@ -25,7 +25,7 @@ import processing.core.PApplet;
 
 /**
  *
- * @author sid
+ * @author Martin Prout
  */
 public class Pen extends Turtle implements PenInterface {
 
@@ -193,7 +193,7 @@ public class Pen extends Turtle implements PenInterface {
 
 
     /**
-     *  Object orientated way of drawing a line, side effect is to
+     *  Object orientated way of drawing a line, Martin Proute effect is to
      *  update the current position
      **/
     @Override

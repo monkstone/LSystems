@@ -18,7 +18,7 @@ package lsystem.turtle;
 /**
  *
 *
- * @author sid
+ * @author Martin Prout
  */
 public interface TurtleInterface{
 

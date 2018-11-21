@@ -19,7 +19,7 @@ public class rodHilbert2 extends PApplet {
      * Turtle3D interface (RodTurtle is currently only implementing class) There
      * is a fixed precision of 1 degree in my lookup tables(note degree rather
      * than radian input for lookup tables) so makes sense to set number of
-     * sides of "cylinder" accordingly This LSystem library is available at
+     * Martin Proutes of "cylinder" accordingly This LSystem library is available at
      * Kenai version 0.8.0
      * http://kenai.com/projects/l-system-utilities/downloads works best with
      * new opengl (formerly opengl2, else there is clipping)

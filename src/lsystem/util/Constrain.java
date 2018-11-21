@@ -18,7 +18,7 @@ package lsystem.util;
 /**
  *
 *
- * @author sid
+ * @author Martin Prout
  */
 public enum Constrain {
 

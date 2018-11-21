@@ -24,12 +24,12 @@ public interface Grammar {
     /**
      *
      */
-    public final String VERSION = "1.1.1";
+    public final String VERSION = "1.2.0";
 
     /**
      *
      */
-    public final String TARGET = "processing-3.3.6";
+    public final String TARGET = "processing-3.4.0";
 
 
 

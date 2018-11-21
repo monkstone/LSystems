@@ -22,7 +22,7 @@ package lsystem.collection.wrule;
 /**
  * 
 *
- * @author sid
+ * @author Martin Prout
  */
 public class WRule implements WeightedRule {
 
