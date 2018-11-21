@@ -1,4 +1,4 @@
-# LSystems 
+# LSystems ![Travis CI](https://travis-ci.org/monkstone/LSystems.svg)
 
 LSystems Library for Processing-3.4
 
