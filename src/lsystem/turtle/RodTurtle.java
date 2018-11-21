@@ -1,5 +1,5 @@
  /* 
- * Copyright (c) 2011-18 Martin Prout
+ * Copyright (c) 2011-18 sid
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@ import processing.core.PApplet;
 /**
  *
 * 
- * @author Martin Prout
+ * @author sid
  */
 public class RodTurtle implements Turtle3D {
 
@@ -138,13 +138,13 @@ public class RodTurtle implements Turtle3D {
    
     @Override
         public void drawRod(float distance, float r1, float r2, int level) {
-        int Martin Proutes = detail[level]; // ensure 360 % Martin Proutes is zero
+        int sides = detail[level]; // ensure 360 % sides is zero
         int angle = 0;
-        int angleIncrement = 360 / Martin Proutes;
+        int angleIncrement = 360 / sides;
         
         parent.translate(0, 0, distance / 2);
         parent.beginShape(PApplet.QUAD_STRIP);
-        for (int i = 0; i <= Martin Proutes; i++) {
+        for (int i = 0; i <= sides; i++) {
             parent.normal(LUT.cos(angle), LUT.sin(angle), 0);
             parent.vertex(r1 * LUT.cos(angle), r1 * LUT.sin(angle), distance / 2);
             parent.vertex(r2 * LUT.cos(angle), r2 * LUT.sin(angle), -distance / 2);
@@ -152,7 +152,7 @@ public class RodTurtle implements Turtle3D {
         }
         parent.endShape();        
         parent.translate(0, 0, distance / 2);
-        endCap(r1, Martin Proutes);
+        endCap(r1, sides);
     }
 
     /**
