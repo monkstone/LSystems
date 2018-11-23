@@ -9,6 +9,12 @@ mvn package # builds the jar
 mvn javadoc:javadoc # generates the javadoc as a site
 bash createLibrary.sh # generates a tar file lsystems.tgz
 ```
+Alternatively you could use the wrapped maven commands
+
+```bash
+./mvnw package # linux or MacOS
+./mvnw.cmd package # windows
+```
 
 The lsystems.jar gets built into target folder copy to your processing-3.4 `libraries/lsystems/library`
 
