@@ -19,8 +19,8 @@ github_username:  monkstone
 markdown: kramdown
 theme: jekyll-theme-cayman
 
-include: [javadocs]
-javadocs:
-  blocks:
+include: [collections]
+collections:
+  javadocs:
     output: true
 permalink: /javadocs/:path
