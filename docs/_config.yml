@@ -18,3 +18,9 @@ github_username:  monkstone
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-cayman
+
+include: [collections]
+collections:
+  blocks:
+    output: true
+permalink: /javadocs/:path
