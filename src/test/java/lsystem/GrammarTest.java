@@ -4,12 +4,10 @@
  */
 package lsystem;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.AfterAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
 /**
  *
@@ -30,7 +28,7 @@ public class GrammarTest {
      *
      * @throws Exception
      */
-    @BeforeClass
+    @BeforeAll
     public static void setUpClass() throws Exception {
     }
 
@@ -38,21 +36,21 @@ public class GrammarTest {
      *
      * @throws Exception
      */
-    @AfterClass
+    @AfterAll
     public static void tearDownClass() throws Exception {
     }
 
     /**
      *
      */
-    @Before
+    @BeforeAll
     public void setUp() {
     }
 
     /**
      *
      */
-    @After
+    @AfterAll
     public void tearDown() {
     }
 
@@ -114,7 +112,7 @@ public class GrammarTest {
     @Test
     public void testVersion() {
         System.out.println("version");
-        String expResult = "1.2.0";
+        String expResult = "1.0.0";
         String result = instance.version();
         assertEquals(expResult, result);
     }

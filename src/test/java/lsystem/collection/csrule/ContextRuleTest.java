@@ -6,12 +6,12 @@
 package lsystem.collection.csrule;
 
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.AfterAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+
 /**
  * Very limited context rule tests
 *
@@ -19,38 +19,38 @@ import static org.junit.Assert.*;
 public class ContextRuleTest {
 
     /**
-     *
+     * 
      */
     public ContextRuleTest() {
     }
 
     /**
-     *
+     * 
      * @throws Exception
      */
-    @BeforeClass
+    @BeforeAll
     public static void setUpClass() throws Exception {
     }
 
     /**
-     *
+     * 
      * @throws Exception
      */
-    @AfterClass
+    @AfterAll
     public static void tearDownClass() throws Exception {
     }
 
     /**
-     *
+     * 
      */
-    @Before
+    @BeforeAll
     public void setUp() {
     }
 
     /**
-     *
+     * 
      */
-    @After
+    @AfterAll
     public void tearDown() {
     }
 

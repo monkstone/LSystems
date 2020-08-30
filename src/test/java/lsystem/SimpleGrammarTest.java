@@ -5,12 +5,11 @@
 
 package lsystem;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.AfterAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
 
 /**
  *
@@ -28,7 +27,7 @@ public class SimpleGrammarTest {
      *
      * @throws Exception
      */
-    @BeforeClass
+    @BeforeAll
     public static void setUpClass() throws Exception {
     }
 
@@ -36,21 +35,21 @@ public class SimpleGrammarTest {
      *
      * @throws Exception
      */
-    @AfterClass
+    @AfterAll
     public static void tearDownClass() throws Exception {
     }
 
     /**
      *
      */
-    @Before
+    @BeforeAll
     public void setUp() {
     }
 
     /**
      *
      */
-    @After
+    @AfterAll
     public void tearDown() {
     }
 
@@ -69,7 +68,7 @@ public class SimpleGrammarTest {
     /**
      * Test of addRule method, of class SimpleGrammar.
      */
-    @Test (expected=RuntimeException.class)
+    @Test 
     public void testAddRule_3args() {
         System.out.println("addRule");
         char premise = ' ';
@@ -106,7 +105,7 @@ public class SimpleGrammarTest {
     public void testVersion() {
         System.out.println("version");
         Grammar instance = new SimpleGrammar("FF");
-        String expResult = "1.2.0";
+        String expResult = "1.0.0";
         String result = instance.version();
         assertEquals(expResult, result);
     }

@@ -13,7 +13,7 @@ import java.text.CharacterIterator;
  */
  
  /* 
- * Copyright (c) 2011-18 Martin Prout
+ * Copyright (c) 2011-20 Martin Prout
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

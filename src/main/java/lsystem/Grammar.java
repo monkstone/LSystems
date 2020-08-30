@@ -1,5 +1,5 @@
  /*
- * Copyright (c) 2011-18 Martin Prout
+ * Copyright (c) 2011-20 Martin Prout
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,12 +24,12 @@ public interface Grammar {
     /**
      *
      */
-    public final String VERSION = "1.2.0";
+    public final String VERSION = "2.0.0";
 
     /**
      *
      */
-    public final String TARGET = "processing-3.4.0";
+    public final String TARGET = "processing-3.3.6";
 
 
 

@@ -1,5 +1,5 @@
  /* 
- * Copyright (c) 2011-18 Martin Prout
+ * Copyright (c) 2011-20 Martin Prout
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,7 +25,7 @@ import processing.core.PApplet;
 
 /**
  *
- * @author Martin Prout
+ * @author sid
  */
 public class Pen extends Turtle implements PenInterface {
 
@@ -193,7 +193,7 @@ public class Pen extends Turtle implements PenInterface {
 
 
     /**
-     *  Object orientated way of drawing a line, Martin Proute effect is to
+     *  Object orientated way of drawing a line, side effect is to
      *  update the current position
      **/
     @Override
