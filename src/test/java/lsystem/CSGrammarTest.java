@@ -5,15 +5,12 @@
 
 package lsystem;
 
-// import java.text.CharacterIterator;
-// import java.text.StringCharacterIterator;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
-
+import java.text.CharacterIterator;
+import java.text.StringCharacterIterator;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.AfterAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
 /**
  *
@@ -22,40 +19,40 @@ import static org.junit.Assert.*;
 public class CSGrammarTest {
     CSGrammar instance;
     /**
-     *
+     * 
      */
     public CSGrammarTest() {
     }
 
     /**
-     *
+     * 
      * @throws Exception
      */
-    @BeforeClass
+    @BeforeAll
     public static void setUpClass() throws Exception {
     }
 
     /**
-     *
+     * 
      * @throws Exception
      */
-    @AfterClass
+    @AfterAll
     public static void tearDownClass() throws Exception {
     }
 
     /**
-     *
+     * 
      */
-    @Before
+    @BeforeAll
     public void setUp() {
         instance = new CSGrammar("FFF");
         instance.setIgnoreList("[]");
     }
 
     /**
-     *
+     * 
      */
-    @After
+    @AfterAll
     public void tearDown() {
     }
 
@@ -143,13 +140,13 @@ public class CSGrammarTest {
     /**
      * Test of getIterator method, of class CSGrammar.
      */
-//    @Test
-//    public void testGetIterator() {
-//        System.out.println("getIterator");
-//        CharacterIterator expResult = new StringCharacterIterator( "FFF") ;
-//        CharacterIterator result = instance.getIterator();
-//        assertEquals(expResult, result);
-//    }
+    @Test
+    public void testGetIterator() {
+        System.out.println("getIterator");
+        CharacterIterator expResult = new StringCharacterIterator( "FFF") ;
+        CharacterIterator result = instance.getIterator();
+        assertEquals(expResult, result);
+    }
 
     /**
      * Test of dispose method, of class CSGrammar.
@@ -160,7 +157,7 @@ public class CSGrammarTest {
         instance.dispose();
     }
 
-
+  
     /**
      * Test of dispose method, of class CSGrammar.
      */
@@ -182,7 +179,7 @@ public class CSGrammarTest {
     @Test
     public void testVersion() {
         System.out.println("version");
-        String expResult = "1.2.0";
+        String expResult = "2.0.0";
         String result = instance.version();
         assertEquals(expResult, result);
     }

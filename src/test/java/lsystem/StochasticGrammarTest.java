@@ -2,7 +2,6 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package lsystem;
 
 import org.junit.jupiter.api.AfterAll;
@@ -11,16 +10,20 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 
+
 /**
  *
 *
  */
-public class SimpleGrammarTest {
+public class StochasticGrammarTest {
+
+    Grammar instance;
 
     /**
      *
      */
-    public SimpleGrammarTest() {
+    public StochasticGrammarTest() {
+        instance = new StochasticGrammar("F");
     }
 
     /**
@@ -54,60 +57,58 @@ public class SimpleGrammarTest {
     }
 
     /**
-     * Test of addRule method, of class SimpleGrammar.
+     * Test of addRule method, of class StochasticGrammar.
      */
     @Test
     public void testAddRule_char_String() {
-        System.out.println("addRule");
+        System.out.println("addRule no weighting");
         char premise = 'F';
-        String rule = "F-F-F-F";
-        Grammar instance = new SimpleGrammar("F");
+        String rule = "F-F-F";
         instance.addRule(premise, rule);
     }
 
     /**
-     * Test of addRule method, of class SimpleGrammar.
+     * Test of addRule method, of class StochasticGrammar.
      */
-    @Test 
+    @Test
     public void testAddRule_3args() {
-        System.out.println("addRule");
-        char premise = ' ';
-        String rule = "";
-        float weight = 0.0F;
-        Grammar instance = new SimpleGrammar("F");
+        System.out.println("addRules with weighting");
+        char premise = 'X';
+        String rule = "FX-FX";
+        float weight = 1.0F;
         instance.addRule(premise, rule, weight);
+        String rule1 = "FX-FX";
+        float weight1 = 1.0F;
+        instance.addRule(premise, rule1, weight1);
     }
 
     /**
-     * Test of getRule method, of class SimpleGrammar.
+     * Test of getRule method, of class StochasticGrammar.
      */
     @Test
     public void testGetRule() {
-        System.out.println("getRule");
-        char premise = 'F';
-        Grammar instance = new SimpleGrammar("F");
-        String rule = "F-F-F-F";
-        instance.addRule(premise, rule);
-        String expResult = "F-F-F-F";
-        String result = instance.getRule(premise);
+        String expResult = "FX-FX";
+        char premise = 'X';
+        String rule = "FX-FX";
+        float weight = 1.0F;
+        instance.addRule(premise, rule, weight);
+        String rule1 = "FF-FF";
+        float weight1 = 1.0F;
+        instance.addRule(premise, rule1, weight1);
+        String result = instance.getRule('X');
         assertEquals(expResult, result);
     }
 
 
 
-
-
-
     /**
-     * Test of version method, of class SimpleGrammar.
+     * Test of version method, of class StochasticGrammar.
      */
     @Test
     public void testVersion() {
         System.out.println("version");
-        Grammar instance = new SimpleGrammar("FF");
         String expResult = "2.0.0";
         String result = instance.version();
         assertEquals(expResult, result);
     }
-
 }
