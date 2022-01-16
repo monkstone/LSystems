@@ -16,7 +16,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <modelVersion>4.0.0</modelVersion>
     <groupId>monkstone</groupId>
     <artifactId>lsystems</artifactId>
-    <version>2.1.0</version>
+    <version>1.2.1</version>
     <name>lsystems</name>
     <description>lsystems for LSystems</description>
     <url>https://github.com/monkstone/LSystems</url>

@@ -1,2 +1,0 @@
-Implementation-Title: lsystems (LSystems library for processing-3.0.1+)    
-Implementation-Version: 1.1
