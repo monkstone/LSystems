@@ -24,7 +24,7 @@ import processing.core.PApplet;
  */
 public class RodTurtle implements Turtle3D {
 
-    private PApplet parent;
+    private final PApplet parent;
     int[] detail = {
         36, 24, 18, 15, 12
     };
